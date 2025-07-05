@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(38, 21, 21);
+        }
+
+        #main {
+            src: url(background.png);
+        }
+    </style>
+</head>
+
+<body class="min-w-screen px-12">
+    <header class="flex justify-between items-center min-w-screen h-20">
+        <div>
+            <img src="Logo-netflix.png" alt="Netflix-logo">
+        </div>
+        <div class="">
+            <select name="lang" id="lang" class="m-1 px-4 py-1 rounded-3xl">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+            <button class="bg-white m-2 px-4 py-2 rounded-3xl">Sign In</button>
+        </div>
+    </header>
+
+    <div id="main" class="relative">
+        <!-- Background Image -->
+        <div
+            class="bg-[url('background.png')] bg-cover bg-center rounded-2xl h-[500px] flex items-center justify-center">
+            <!-- Content on top of image -->
+            <div class="text-center text-white px-8 md:px-20">
+                <h1 class="text-4xl font-black m-4">Unlimited movies, TV shows and more</h1>
+                <h4 class="text-xl mb-2">Starts at ₹149. Cancel any time.</h4>
+                <p class="mb-4">Ready to watch? Enter your email to create or restart your membership.</p>
+                <input class="py-3 px-4 m-2 w-full bg-gray-600 max-w-md rounded-3xl text-black" type="email"
+                    placeholder="Email address"><br>
+                <button class="bg-red-600 px-12 py-3 m-2 rounded-3xl">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="text-white text-3xl font-black m-4">Trending Now</h2>
+        <!-- use bootstrap here for cards -->
+    </div>
+    <div class="text-white">
+        <h2 class=" text-3xl font-black m-4">Freqently Asked questions</h2>
+        <ul class="font-black">
+            <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
+                <p>What is Netflix?</p>
+                <i>*</i>
+            </li>
+            <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
+                <p>How much does Netflix cost?</p>
+                <i>*</i>
+            </li>
+            <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
+                <p>Where can I watch?</p>
+                <i>*</i>
+            </li>
+            <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
+                <p>How do I cancel</p>
+                <i>*</i>
+            </li>
+            <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
+                <p>What can i watch on Netflix?</p>
+                <i>*</i>
+            </li>
+            <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
+                <p>Is Netflix good for kids?</p>
+                <i>*</i>
+            </li>
+        </ul>
+        <div class="flex justify-center">
+            <div class="">
+                <p>Ready ro watch? Enter your email to create or restart your membership.</p>
+                <input class="py-3 px-4 m-2 w-full bg-gray-600 max-w-md rounded-3xl text-black" type="email" placeholder="Email address"><br>
+                <button class="bg-red-600 px-12 py-3 m-2 rounded-3xl">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
