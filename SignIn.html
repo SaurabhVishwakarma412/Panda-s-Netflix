@@ -7,13 +7,23 @@
     <title>SignIn Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./output.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <style>
         body {
-            background-color: rgb(38, 21, 21);
+            background: linear-gradient(to top, #111 0%, #3a0d0d 100%);
+            /* Optional: fallback color */
+            background-color: #111;
         }
 
         #main {
             src: url(background.png);
+        }
+        .card-header, .card-body{
+            background-color: rgba(39, 39, 39, 0.5);
         }
     </style>
 </head>
@@ -21,10 +31,10 @@
 <body class="min-w-screen px-12">
     <header class="flex justify-between items-center min-w-screen h-20">
         <div>
-            <img src="Logo-netflix.png" alt="Netflix-logo">
+            <img src="icons8-netflix-logo-48.png" alt="Netflix-logo" class="size-32">
         </div>
         <div class="">
-            <select name="lang" id="lang" class="m-1 px-4 py-1 rounded-3xl">
+            <select name="lang" id="lang" class="m-1 px-4 py-1 bg-opacity-0 bg-black text-white border-2 rounded-3xl">
                 <option value="English">English</option>
                 <option value="Hindi">Hindi</option>
             </select>
@@ -41,54 +51,107 @@
                 <h1 class="text-4xl font-black m-4">Unlimited movies, TV shows and more</h1>
                 <h4 class="text-xl mb-2">Starts at ₹149. Cancel any time.</h4>
                 <p class="mb-4">Ready to watch? Enter your email to create or restart your membership.</p>
-                <input class="py-3 px-4 m-2 w-full bg-gray-600 max-w-md rounded-3xl text-black" type="email"
-                    placeholder="Email address"><br>
+                <input class="py-3 bg-opacity-90 px-4 m-2 w-full bg-gray-600 max-w-md rounded-3xl text-black"
+                    type="email" placeholder="Email address"><br>
                 <button class="bg-red-600 px-12 py-3 m-2 rounded-3xl">Get Started</button>
             </div>
         </div>
     </div>
     <div>
         <h2 class="text-white text-3xl font-black m-4">Trending Now</h2>
-        <!-- use bootstrap here for cards -->
+        <!-- using bootstrap here for cards -->
+        <div class="flex justify-between grid grid-cols-1  sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+
+            <div  class="card text-bg-secondary mx-1 mb-3 " style="max-width: 18rem;">
+                <div class="card-header">Enjoy on your TV</div>
+                <div class="card-body">
+                    <p class="card-text">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                </div>
+            </div>
+            <div class="card text-bg-secondary mx-1 mb-3" style="max-width: 18rem;">
+                <div class="card-header">Download your shows to watch offline</div>
+                <div class="card-body">
+                    <p class="card-text">Save your favourites easily and always have something to watch.</p>
+                </div>
+            </div>
+            <div class="card text-bg-secondary mx-1 mb-3" style="max-width: 18rem;">
+                <div class="card-header">Watch everywhere</div>
+                <div class="card-body">
+                    <p class="card-text">Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+                </div>
+            </div>
+            <div class="card text-bg-secondary mx-1 mb-3" style="max-width: 18rem;">
+                <div class="card-header">Create profiles for kids</div>
+                <div class="card-body">
+                    <p class="card-text">Send kids on adventures with their favourite characters in a space made just
+                        for
+                        them — free with your membership.</p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="text-white">
         <h2 class=" text-3xl font-black m-4">Freqently Asked questions</h2>
         <ul class="font-black">
             <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
                 <p>What is Netflix?</p>
-                <i>*</i>
+                <i class="fa-solid fa-plus"></i>
             </li>
             <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
                 <p>How much does Netflix cost?</p>
-                <i>*</i>
+                <i class="fa-solid fa-plus"></i>
             </li>
             <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
                 <p>Where can I watch?</p>
-                <i>*</i>
+                <i class="fa-solid fa-plus"></i>
             </li>
             <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
                 <p>How do I cancel</p>
-                <i>*</i>
+                <i class="fa-solid fa-plus"></i>
             </li>
             <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
                 <p>What can i watch on Netflix?</p>
-                <i>*</i>
+                <i class="fa-solid fa-plus"></i>
             </li>
             <li class="w-full m-1 p-4 rounded-2xl bg-gray-800 flex justify-between">
                 <p>Is Netflix good for kids?</p>
-                <i>*</i>
+                <i class="fa-solid fa-plus"></i>
             </li>
         </ul>
         <div class="flex justify-center">
             <div class="">
                 <p>Ready ro watch? Enter your email to create or restart your membership.</p>
-                <input class="py-3 px-4 m-2 w-full bg-gray-600 max-w-md rounded-3xl text-black" type="email" placeholder="Email address"><br>
+                <input class="py-3 px-4 m-2 w-full bg-gray-600 max-w-md rounded-3xl text-black" type="email"
+                    placeholder="Email address"><br>
                 <button class="bg-red-600 px-12 py-3 m-2 rounded-3xl">Get Started</button>
             </div>
         </div>
     </div>
-
-
+    <div class="text-white">
+        <p class=" my-12">Questions? Call 000-800-919-1743</p>
+        <div class="flex justify-between grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+            <a href="">FAQ</a>
+            <a href="">Help Center</a>
+            <a href="">Account</a>
+            <a href="">Media Center</a>
+            <a href="">Investor Relation</a>
+            <a href="">Jobs</a>
+            <a href="">Way to watch</a>
+            <a href="">Terms of Use</a>
+            <a href="">Privacy</a>
+            <a href="">Cookie Preference</a>
+            <a href="">Corporate Information</a>
+            <a href="">Contact Us</a>
+            <a href="">Speed Test</a>
+            <a href="">Legal Notices</a>
+            <a href="">Only on Netflix</a>
+        </div>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+        </select>
+        <p class="my-8 text-xl">Netflix India</p>
+        <p class="my-8">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a class="text-blue-600 font-black" href="">Learn more.</a></p>
+    </div>
 
 </body>
 
